@@ -1,11 +1,4 @@
 {
-  "dependencies": {
-    "inquirer": "^9.1.2",
-    "node": "^18.9.0"
-  },
-  "devDependencies": {
-    "jest": "^29.0.3"
-  },
   "name": "team_profile_generator",
   "description": "![LICENSE BADGE](https://img.shields.io/badge/license-ISC-brightgreen?style=for-the-badge)",
   "version": "1.0.0",
@@ -14,6 +7,7 @@
     "lib": "lib"
   },
   "scripts": {
+    "state": "node index.js",
     "test": "jest"
   },
   "repository": {
@@ -26,5 +20,13 @@
   "bugs": {
     "url": "https://github.com/ommarkhawaja1/team_profile_generator/issues"
   },
-  "homepage": "https://github.com/ommarkhawaja1/team_profile_generator#readme"
+  "homepage": "https://github.com/ommarkhawaja1/team_profile_generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4",
+    "node": "^18.9.0",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "jest": "^29.0.3"
+  }
 }
