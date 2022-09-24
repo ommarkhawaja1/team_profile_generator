@@ -2,23 +2,23 @@ const fs = require('fs');
 
 
 function writeFile(fileContent) {
-    new Promise((resolve, reject) => {
-        fs.writeFile('../dist/index.html', fileContent, err => {
-            if (err) {
-                reject(err);
-                return;
-            }
-            resolve({
-                ok: true,
-                message: 'Roster created!',
-            })
-        })
-    });
+        new Promise((resolve, reject) => {
+                fs.writeFile('../dist/index.html', fileContent, err => {
+                        if (err) {
+                                reject(err);
+                                return;
+                        }
+                        resolve({
+                                ok: true,
+                                message: 'Roster created!',
+                        })
+                })
+        });
 }
-function appendToHtml(content) {
-    fs.appendFile('../dist/index.html', content, function (err) {
-        if (err) throw err;
-    });
+function appendToHtml(fileContent) {
+        fs.appendFile('../dist/index.html', fileContent, function (err) {
+                if (err) throw err;
+        });
 }
 const htmlStartingTemplate = `
 <!DOCTYPE html>
@@ -44,10 +44,10 @@ const htmlEndingTemplate = `
 </html>`;
 
 const generateManagerCard = function (manager) {
-    if (!manager) {
-        return '';
-    }
-    return `
+        if (!manager) {
+                return '';
+        }
+        return `
                         <div class="col">
                                 <div class="card border-dark text-bg-light h-100 w-75">
                                         <h5 class="card-title card-header text-center text-bg-danger ">Manager</h5>
@@ -65,10 +65,10 @@ const generateManagerCard = function (manager) {
                         </div>`
 }
 const generateEngineerCard = function (engineer) {
-    if (!engineer) {
-        return '';
-    }
-    return `
+        if (!engineer) {
+                return '';
+        }
+        return `
                         <div class="col">
                                 <div class="card border-dark text-bg-light h-100 w-75">
                                         <h5 class="card-title card-header text-center  text-bg-success">Engineer</h5>
@@ -87,10 +87,10 @@ const generateEngineerCard = function (engineer) {
 `
 }
 const generateInternCard = function (intern) {
-    if (!intern) {
-        return '';
-    }
-    return `
+        if (!intern) {
+                return '';
+        }
+        return `
                         <div class="col">
                                 <div class="card text-bg-light border-dark h-100 w-75">
                                         <h5 class="card-title card-header text-center text-bg-secondary">Intern</h5>

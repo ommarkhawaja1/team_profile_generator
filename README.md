@@ -12,17 +12,22 @@
 
 ## Description
 
-
+This is a command line application that generates an HTML file containing a roster of employees. A user is first prompted with a series of questions regarding their teams information starting with the manager's name, employee ID, email address, and office number. They are given the option to add an engineer or intern to the roster. If the user chooses to add an enginneer, then they will be asked to enter the engineer's name, ID, email, and GitHub information. Likewise, if the user selects an intern, then they will be asked to enter their name, ID, email, and school information. Once the user is finishes building their team then an HTMl file is generated with their team's information. 
 
 ## Installation
 
-
+To install this application, clone the repo to computer and ensure you have Node.js installed. 
 
 ## Usage
+
+To start the application, first install the necessary packages with `npm i` and utilize the command `node index.js` in your terminal. Answer the series of questions and your HTML file will be created in the /dist directory. 
+
 
 
 Technologies:
 
+- Javascript
+- Node
 - Inquirer
 - Jest
 ## License
