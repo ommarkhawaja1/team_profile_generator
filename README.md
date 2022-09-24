@@ -22,7 +22,7 @@ To install this application, clone the repo to computer and ensure you have Node
 
 To start the application, first install the necessary packages with `npm i` and utilize the command `node index.js` in your terminal. Answer the series of questions and your HTML file will be created in the /dist directory. 
 
-
+https://user-images.githubusercontent.com/79770445/192115816-02701e71-0bb3-4e5d-acc4-cdd000855814.mp4
 
 Technologies:
 
